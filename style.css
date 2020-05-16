@@ -1,0 +1,114 @@
+body{background-color :rgba(10, 31, 68); height : 90%; color : white; font-family : text}
+html{height : 90%;}
+@font-face{
+	font-family : text;
+	src : url(bellota.ttf);
+	}
+*{box-sizing : border-box; font-size : 100%;}
+#sear{
+	text-align : center;
+	position :fixed; 
+	padding-top : 40px; 
+	padding-bottom : 20px;
+	z-index : 1;
+	overflow : hidden;
+	width : 170px;
+	}
+input{
+	border: 1px solid white;
+	border-radius : 15px;
+	padding : 7px;
+	font-size : 100%;
+	outline : none;
+	width : 80%;
+	color : white;
+	font-family : monospace;
+	background-color : transparent;
+	}
+.left{background-color : rgba(255,255,255,0.5);}
+.left, #rest{
+	position : fixed;
+	height : 100%;
+	width : 170px;
+	left : 0; top:0;
+	border-top-right-radius : 10px;
+	border-top-right-radius : 10px;
+	overflow : scroll;
+	}
+#rest{
+	margin-top : 80px;
+	height : 100%;
+	border-top-right-radius : 0;
+	padding : 5px;
+	border-top-right-radius : 0;
+	display : flex; flex-direction : column;
+	}
+.right{
+	position : absolute;
+	right : 5vw;
+	top : 20vw;
+	background-color : rgba(255,255,255,0.5);
+	width : 140px;
+	border-radius : 10px;
+	height: 50%;
+	}
+img{
+	width : 30px; height : 20px;
+	margin-right : 5px;
+	border-radius : 50%;
+	}
+ul{
+	list-style : none;
+	padding-left : 0;
+	}
+li{
+	list-style-position : inside;
+	padding : 5px;
+	border-bottom : 1px solid rgb(10,31,68);
+	}
+li:hover{
+	background-color : rgb(10,31,68);
+	border-radius : 10px;
+	}
+.right {
+	padding : 15px;
+	overflow : scroll;
+	}
+.res{
+	display : flex;
+	margin-bottom : 17px;
+	}
+@media (min-width : 500px)
+{
+	*{font-size : 110%;}
+	.left, .right, #rest{
+		width : 200px;
+		padding-left : 10px;
+		padding-right : 10px;
+		}
+	.right{
+		right : 10vw;
+		}
+}
+@media (min-width : 800px)
+{
+	.left, .right, #rest, #sear{
+		width : 350px;
+		padding-left : 20px;
+		padding-right : 20px;
+		}
+	.right{
+		right : 10vw;
+		}
+}
+@media (min-width : 1200px)
+{
+	.left, .right, #rest{
+		width : 600px;
+		padding-left : 30px;
+		padding-right : 30px;
+		}
+	.right{
+		right : 10vw;
+		}
+}
