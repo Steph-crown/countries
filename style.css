@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
 
-body{background-color :rgba(10, 31, 68); height : 90%; color : white; font-family : text}
+body{background-color :rgba(10, 31, 68); height : 90%; color : white; font-family : Lato}
 html{height : 90%;}
 
 *{box-sizing : border-box; margin:0; padding:0; font-family: Lato}
