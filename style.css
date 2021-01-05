@@ -1,10 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
 body{background-color :rgba(10, 31, 68); height : 90%; color : white; font-family : text}
 html{height : 90%;}
-@font-face{
-	font-family : text;
-	src : url(bellota.ttf);
-	}
-*{box-sizing : border-box; font-size : 100%;}
+
+*{box-sizing : border-box; margin:0; padding:0; font-family: Lato}
 #sear{
 	text-align : center;
 	position :fixed; 
@@ -18,11 +17,10 @@ input{
 	border: 1px solid white;
 	border-radius : 15px;
 	padding : 7px;
-	font-size : 100%;
+	font-size : 16px;
 	outline : none;
 	width : 80%;
 	color : white;
-	font-family : monospace;
 	background-color : transparent;
 	}
 .left{background-color : rgba(255,255,255,0.5);}
@@ -86,7 +84,6 @@ li:hover{
 }
 @media (min-width : 500px)
 {
-	*{font-size : 110%;}
 	.left, .right, #rest{
 		width : 200px;
 		padding-left : 10px;
